@@ -11,9 +11,19 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    host: true,
+    port: process.env.PORT || 5173,
+  },
   preview: {
     host: '0.0.0.0',
     port: process.env.PORT || 4173,
-    allowedHosts: ['mindfit.onrender.com']
+    allowedHosts: [
+      'fittest.onrender.com',
+      'mindfit.onrender.com',
+      '.onrender.com',
+      'localhost',
+      '127.0.0.1'
+    ]
   }
 })
