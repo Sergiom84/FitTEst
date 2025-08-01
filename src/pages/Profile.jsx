@@ -22,8 +22,8 @@ const Profile = () => {
   return (
     <div className="space-y-8 fade-in">
       <div>
-        <h1 className="text-3xl font-bold text-foreground">Profile</h1>
-        <p className="text-muted-foreground">Manage your account and fitness goals</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Profile</h1>
+        <p className="text-gray-600 dark:text-gray-400">Manage your account and fitness goals</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -42,15 +42,15 @@ const Profile = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-muted-foreground" />
+                <Mail className="h-4 w-4 text-gray-600 dark:text-gray-400" />
                 <span className="text-sm">{userInfo.email}</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-muted-foreground" />
+                <Phone className="h-4 w-4 text-gray-600 dark:text-gray-400" />
                 <span className="text-sm">{userInfo.phone}</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4 text-muted-foreground" />
+                <MapPin className="h-4 w-4 text-gray-600 dark:text-gray-400" />
                 <span className="text-sm">{userInfo.location}</span>
               </div>
               <div className="pt-4 space-y-2">
@@ -80,17 +80,17 @@ const Profile = () => {
                 <div key={index} className="space-y-2">
                   <div className="flex justify-between items-center">
                     <span className="font-medium">{goal.title}</span>
-                    <span className="text-sm text-muted-foreground">
+                    <span className="text-sm text-gray-600 dark:text-gray-400">
                       {goal.current} / {goal.target}
                     </span>
                   </div>
-                  <div className="w-full bg-secondary rounded-full h-2">
-                    <div 
-                      className="bg-primary h-2 rounded-full transition-all duration-300"
+                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div
+                      className="bg-blue-600 dark:bg-blue-500 h-2 rounded-full transition-all duration-300"
                       style={{ width: `${goal.progress}%` }}
                     ></div>
                   </div>
-                  <div className="text-xs text-muted-foreground">
+                  <div className="text-xs text-gray-600 dark:text-gray-400">
                     {goal.progress}% complete
                   </div>
                 </div>
@@ -106,21 +106,21 @@ const Profile = () => {
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-accent rounded-lg">
-                  <div className="text-2xl font-bold text-foreground">24</div>
-                  <div className="text-sm text-muted-foreground">Workouts This Month</div>
+                <div className="text-center p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                  <div className="text-2xl font-bold text-gray-900 dark:text-gray-50">24</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Workouts This Month</div>
                 </div>
-                <div className="text-center p-4 bg-accent rounded-lg">
-                  <div className="text-2xl font-bold text-foreground">12</div>
-                  <div className="text-sm text-muted-foreground">Current Streak</div>
+                <div className="text-center p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                  <div className="text-2xl font-bold text-gray-900 dark:text-gray-50">12</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Current Streak</div>
                 </div>
-                <div className="text-center p-4 bg-accent rounded-lg">
-                  <div className="text-2xl font-bold text-foreground">2,847</div>
-                  <div className="text-sm text-muted-foreground">Calories Burned</div>
+                <div className="text-center p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                  <div className="text-2xl font-bold text-gray-900 dark:text-gray-50">2,847</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Calories Burned</div>
                 </div>
-                <div className="text-center p-4 bg-accent rounded-lg">
-                  <div className="text-2xl font-bold text-foreground">1,240</div>
-                  <div className="text-sm text-muted-foreground">Active Minutes</div>
+                <div className="text-center p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                  <div className="text-2xl font-bold text-gray-900 dark:text-gray-50">1,240</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Active Minutes</div>
                 </div>
               </div>
             </CardContent>

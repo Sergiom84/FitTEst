@@ -48,8 +48,8 @@ const Progress = () => {
   return (
     <div className="space-y-8 fade-in">
       <div>
-        <h1 className="text-3xl font-bold text-foreground">Progress</h1>
-        <p className="text-muted-foreground">Track your fitness journey and achievements</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Progress</h1>
+        <p className="text-gray-600 dark:text-gray-400">Track your fitness journey and achievements</p>
       </div>
 
       {/* Progress Charts */}
@@ -116,14 +116,14 @@ const Progress = () => {
             {achievements.map((achievement, index) => {
               const Icon = achievement.icon
               return (
-                <div key={index} className="flex items-center space-x-4 p-4 bg-accent rounded-lg">
-                  <div className={`p-2 rounded-full bg-background ${achievement.color}`}>
+                <div key={index} className="flex items-center space-x-4 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                  <div className={`p-2 rounded-full bg-white dark:bg-gray-950 ${achievement.color}`}>
                     <Icon className="h-5 w-5" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-medium text-foreground">{achievement.title}</h3>
-                    <p className="text-sm text-muted-foreground">{achievement.description}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{achievement.date}</p>
+                    <h3 className="font-medium text-gray-900 dark:text-gray-50">{achievement.title}</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{achievement.description}</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">{achievement.date}</p>
                   </div>
                 </div>
               )

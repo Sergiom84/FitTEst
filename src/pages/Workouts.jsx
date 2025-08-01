@@ -76,8 +76,8 @@ const Workouts = () => {
   return (
     <div className="space-y-8 fade-in">
       <div>
-        <h1 className="text-3xl font-bold text-foreground">Workouts</h1>
-        <p className="text-muted-foreground">Choose from our collection of fitness routines</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Workouts</h1>
+        <p className="text-gray-600 dark:text-gray-400">Choose from our collection of fitness routines</p>
       </div>
 
       {/* Workouts Grid */}
