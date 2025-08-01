@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="dumbbellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Mancuerna -->
+  <!-- Peso izquierdo -->
+  <rect x="2" y="10" width="6" height="12" rx="2" fill="url(#dumbbellGradient)" stroke="#1E40AF" stroke-width="0.5"/>
+  
+  <!-- Barra central -->
+  <rect x="8" y="14" width="16" height="4" rx="1" fill="url(#dumbbellGradient)" stroke="#1E40AF" stroke-width="0.5"/>
+  
+  <!-- Peso derecho -->
+  <rect x="24" y="10" width="6" height="12" rx="2" fill="url(#dumbbellGradient)" stroke="#1E40AF" stroke-width="0.5"/>
+  
+  <!-- Detalles de agarre -->
+  <line x1="10" y1="15" x2="22" y2="15" stroke="#1E40AF" stroke-width="0.5" opacity="0.7"/>
+  <line x1="10" y1="17" x2="22" y2="17" stroke="#1E40AF" stroke-width="0.5" opacity="0.7"/>
+  
+  <!-- Sombras para dar profundidad -->
+  <rect x="2.5" y="10.5" width="5" height="11" rx="1.5" fill="none" stroke="#60A5FA" stroke-width="0.3" opacity="0.6"/>
+  <rect x="24.5" y="10.5" width="5" height="11" rx="1.5" fill="none" stroke="#60A5FA" stroke-width="0.3" opacity="0.6"/>
+</svg>

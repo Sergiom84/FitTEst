@@ -23,23 +23,23 @@ const Progress = () => {
 
   const achievements = [
     {
-      title: "First Workout",
-      description: "Completed your first workout session",
-      date: "2 months ago",
+      title: "Primer Entrenamiento",
+      description: "Completaste tu primera sesión de entrenamiento",
+      date: "Hace 2 meses",
       icon: Award,
       color: "text-yellow-500"
     },
     {
-      title: "7-Day Streak",
-      description: "Worked out for 7 consecutive days",
-      date: "1 month ago",
+      title: "Racha de 7 Días",
+      description: "Entrenaste durante 7 días consecutivos",
+      date: "Hace 1 mes",
       icon: Calendar,
       color: "text-blue-500"
     },
     {
-      title: "Weight Goal",
-      description: "Lost 2.5kg towards your goal",
-      date: "2 weeks ago",
+      title: "Objetivo de Peso",
+      description: "Perdiste 2.5kg hacia tu objetivo",
+      date: "Hace 2 semanas",
       icon: Target,
       color: "text-green-500"
     }
@@ -48,8 +48,8 @@ const Progress = () => {
   return (
     <div className="space-y-8 fade-in">
       <div>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Progress</h1>
-        <p className="text-gray-600 dark:text-gray-400">Track your fitness journey and achievements</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Progreso</h1>
+        <p className="text-gray-600 dark:text-gray-400">Sigue tu viaje fitness y tus logros</p>
       </div>
 
       {/* Progress Charts */}
@@ -59,9 +59,9 @@ const Progress = () => {
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
               <TrendingUp className="h-5 w-5 text-green-500" />
-              <span>Weight Progress</span>
+              <span>Progreso de Peso</span>
             </CardTitle>
-            <CardDescription>Your weight loss journey over the past 6 months</CardDescription>
+            <CardDescription>Tu viaje de pérdida de peso en los últimos 6 meses</CardDescription>
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={300}>
@@ -87,9 +87,9 @@ const Progress = () => {
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
               <Calendar className="h-5 w-5 text-blue-500" />
-              <span>Weekly Workouts</span>
+              <span>Entrenamientos Semanales</span>
             </CardTitle>
-            <CardDescription>Number of workouts completed each week</CardDescription>
+            <CardDescription>Número de entrenamientos completados cada semana</CardDescription>
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={300}>
@@ -108,8 +108,8 @@ const Progress = () => {
       {/* Achievements */}
       <Card>
         <CardHeader>
-          <CardTitle>Achievements</CardTitle>
-          <CardDescription>Your fitness milestones and accomplishments</CardDescription>
+          <CardTitle>Logros</CardTitle>
+          <CardDescription>Tus hitos y logros de fitness</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">

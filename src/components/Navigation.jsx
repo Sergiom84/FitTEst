@@ -1,15 +1,18 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Brain, Home, Dumbbell, TrendingUp, User } from 'lucide-react'
+import { Brain, User, BookOpen, Calendar, Apple, Shield, TrendingUp, Settings } from 'lucide-react'
 import { cn } from '../lib/utils'
 
 const Navigation = () => {
   const location = useLocation()
 
   const navItems = [
-    { path: '/', icon: Home, label: 'Dashboard' },
-    { path: '/workouts', icon: Dumbbell, label: 'Workouts' },
-    { path: '/progress', icon: TrendingUp, label: 'Progress' },
-    { path: '/profile', icon: User, label: 'Profile' },
+    { path: '/profile', icon: User, label: 'Perfil' },
+    { path: '/methodologies', icon: BookOpen, label: 'Metodologías' },
+    { path: '/routines', icon: Calendar, label: 'Rutinas' },
+    { path: '/nutrition', icon: Apple, label: 'Nutrición' },
+    { path: '/injuries', icon: Shield, label: 'Lesiones' },
+    { path: '/progress', icon: TrendingUp, label: 'Seguimiento' },
+    { path: '/settings', icon: Settings, label: 'Ajustes' },
   ]
 
   return (

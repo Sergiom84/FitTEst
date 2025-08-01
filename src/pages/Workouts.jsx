@@ -6,55 +6,55 @@ const Workouts = () => {
   const workouts = [
     {
       id: 1,
-      title: "Upper Body Strength",
-      description: "Build muscle and strength in your upper body",
+      title: "Fuerza Tren Superior",
+      description: "Desarrolla músculo y fuerza en tu tren superior",
       duration: "45 min",
-      difficulty: "Intermediate",
+      difficulty: "Intermedio",
       exercises: 8,
       image: "💪"
     },
     {
       id: 2,
-      title: "Cardio Blast",
-      description: "High-intensity cardio to burn calories",
+      title: "Cardio Explosivo",
+      description: "Cardio de alta intensidad para quemar calorías",
       duration: "30 min",
-      difficulty: "Beginner",
+      difficulty: "Principiante",
       exercises: 6,
       image: "🏃"
     },
     {
       id: 3,
-      title: "Core & Abs",
-      description: "Strengthen your core with targeted exercises",
+      title: "Core y Abdominales",
+      description: "Fortalece tu core con ejercicios específicos",
       duration: "25 min",
-      difficulty: "Intermediate",
+      difficulty: "Intermedio",
       exercises: 10,
       image: "🎯"
     },
     {
       id: 4,
-      title: "Full Body HIIT",
-      description: "Complete workout targeting all muscle groups",
+      title: "HIIT Cuerpo Completo",
+      description: "Entrenamiento completo para todos los grupos musculares",
       duration: "40 min",
-      difficulty: "Advanced",
+      difficulty: "Avanzado",
       exercises: 12,
       image: "🔥"
     },
     {
       id: 5,
-      title: "Yoga Flow",
-      description: "Relaxing yoga session for flexibility",
+      title: "Flujo de Yoga",
+      description: "Sesión relajante de yoga para flexibilidad",
       duration: "35 min",
-      difficulty: "Beginner",
+      difficulty: "Principiante",
       exercises: 15,
       image: "🧘"
     },
     {
       id: 6,
-      title: "Lower Body Power",
-      description: "Strengthen your legs and glutes",
+      title: "Potencia Tren Inferior",
+      description: "Fortalece tus piernas y glúteos",
       duration: "50 min",
-      difficulty: "Advanced",
+      difficulty: "Avanzado",
       exercises: 9,
       image: "🦵"
     }
@@ -62,11 +62,11 @@ const Workouts = () => {
 
   const getDifficultyColor = (difficulty) => {
     switch (difficulty) {
-      case 'Beginner':
+      case 'Principiante':
         return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
-      case 'Intermediate':
+      case 'Intermedio':
         return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300'
-      case 'Advanced':
+      case 'Avanzado':
         return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300'
       default:
         return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300'
@@ -76,8 +76,8 @@ const Workouts = () => {
   return (
     <div className="space-y-8 fade-in">
       <div>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Workouts</h1>
-        <p className="text-gray-600 dark:text-gray-400">Choose from our collection of fitness routines</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50">Entrenamientos</h1>
+        <p className="text-gray-600 dark:text-gray-400">Elige entre nuestra colección de rutinas de fitness</p>
       </div>
 
       {/* Workouts Grid */}
@@ -102,12 +102,12 @@ const Workouts = () => {
                 </div>
                 <div className="flex items-center space-x-1">
                   <Dumbbell className="h-4 w-4" />
-                  <span>{workout.exercises} exercises</span>
+                  <span>{workout.exercises} ejercicios</span>
                 </div>
               </div>
               <Button className="w-full" size="sm">
                 <Play className="h-4 w-4 mr-2" />
-                Start Workout
+                Iniciar Entrenamiento
               </Button>
             </CardContent>
           </Card>
